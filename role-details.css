@@ -1,0 +1,384 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0%;
+    font-size: 0.9rem;
+    overflow-y: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-family: "poppins";
+}
+
+.right-panel {
+    width: 80%;
+    padding:0rem 0.5rem 0rem 1rem;
+    background-color: rgb(249, 253, 255) ;
+}
+
+.left-panel {
+    width:18%;
+    background-color: white;
+    padding-left:1rem;
+    position: relative;
+}
+
+.logo-area{
+    display: flex;
+    position: relative;
+}
+
+.logo-area .logo{
+    padding:1.5rem 2rem 1rem 0rem;
+}
+
+.handle{
+    padding:1.5rem 0rem 1rem 2rem;
+    position: absolute;
+    right: -1rem; 
+}
+
+.dashboard, .employees, .roles, .access{
+    display: flex;
+}
+
+.roles{
+    background-color: rgb(255, 209, 209);
+    border-radius:4px;
+    margin:0rem 1rem 0rem -1rem;
+    padding-left: 1rem;
+    color: red;
+    align-items: center;
+}
+
+.roles i{
+    color:red;
+    font-size: 0.9rem;
+}
+
+.roles-left{
+    display: flex;
+    flex: 1;
+}
+
+.roles-right{
+    padding-right:0.5rem;
+}
+
+.access {
+    align-items: center;
+}
+
+.access i{
+    color:rgb(117, 117, 117);
+    font-size: 0.9rem;
+}
+
+.access-left{
+    display: flex;
+    flex: 1;
+}
+
+.access-right{
+    padding-right:1.5rem;
+}
+
+.dashboard-img, .roles-img, .assign-img{
+    padding-right: 1rem;
+}
+
+.employees p{
+    padding-left: 1rem;
+}
+
+.employees img{
+    width: 1.5rem;
+}
+
+.update{
+    background-color: rgb(253, 243, 243);
+    border-radius:6px;
+    margin:0rem 1rem 0.5rem 0rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.update-content{
+    padding:1rem 1rem;
+}
+
+.update-content .update-title{
+    color: red;
+}
+
+.dismiss-btn, .accept-btn{
+    width:6rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.dismiss-btn{
+    color: red;
+    background-color: rgb(250, 217, 217);
+    font-weight: bold;
+}
+
+.accept-btn{
+    color:white;
+    background-color: rgb(251, 57, 57);
+    font-weight: bold;
+}
+
+.search-panel{
+    display: flex;
+    background-color:white;
+    border-radius:10px;
+    width: 100%;
+    box-shadow:2px 1px 10px rgb(220, 220, 220);
+    margin-top:0.5rem;
+}
+
+.search-leftpart{
+    display: flex;
+    width:50%;
+}
+
+.search-rightpart{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.search{
+    border: none;
+    outline: none;
+}
+
+.search-leftpart img{
+    width:2rem;
+    height: 2rem;
+    padding:1.5rem 0.5rem 1.5rem 1rem;
+}
+
+.search-rightpart img{
+    width:3rem;
+    height: 3rem;
+    padding: 1rem 0rem;
+}
+
+.search-rightpart i{
+    font-size:2rem;
+    padding:1.5rem 1rem 1rem 1rem;
+}
+.profile-content{
+    display: block;
+    padding-top:0.5rem;
+}
+
+.operations{
+    display: flex;
+}
+
+.operations .op-content{
+    width: 65%;
+}
+
+.operations .op-btn{
+    width: 35%;
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: flex-end;
+}
+
+.add-btn{
+    background-color:rgb(251, 57, 57);
+    box-shadow: 2px 1px 10px rgb(220, 220, 220);
+    border: none;
+    width: 13rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-dropdowns{
+    width: 100%;
+    display: block;
+}
+
+.details-wrapper{
+    height: calc(100% - 270px);
+    overflow-y:auto;
+    margin-top: 1rem;
+}
+
+.role-details{
+    width: 100%;
+    display: flex;
+}
+
+.details-card{
+    width:33%;
+    display: block;
+    margin: 0.5rem 1rem 1rem 0rem;
+    border: 1px solid rgb(91, 91, 91);
+    border-radius:4px;
+    background-color: white;
+    padding-top: 1.3rem;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.4rem;
+}
+
+.icon{
+    margin-left:0.5rem;
+}
+
+.icon-profile{
+    display: flex;
+}
+
+.icon img{
+    width: 1rem;
+    height: 1rem;
+    padding-right:0.5rem;
+}
+
+.right-text{
+    text-align: right;
+    padding:0rem 0.7rem 0.5rem 0.5rem;
+    cursor: pointer;
+}
+
+i{
+    font-size: 1.5rem;
+    padding: 0.7rem;
+}
+
+
+
+/* Media queries for responsiveness*/
+@media (max-width: 768px){
+
+    .container{
+        height: 100%;
+    }
+
+    .search-leftpart img{
+        padding-top:2.5rem;
+    }
+    .search-rightpart img {
+        width: 3rem;
+        height: 3rem;
+        padding: 2rem 0rem;
+    }
+
+    .search-rightpart i{
+        padding-top: 2.5rem;
+    }
+    
+    .role-details{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .role-details .details-card{
+        width: 70%;
+    }
+
+    .details-wrapper{
+        max-height:400px;
+        overflow-y:scroll;
+        margin-top: 1rem;
+    }
+}
+
+
+@media (max-width: 425px){
+
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .left-panel{
+        width:33%;
+    }
+
+    .right-panel{
+        width: 60%;
+    }
+
+    .update{
+        margin-bottom: 1rem;
+    }
+
+    .search-panel{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-leftpart, .search-rightpart{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-leftpart img {
+        width: 2rem;
+        height: 2rem;
+        padding: 1.5rem 0.5rem 1.5rem 1rem;
+    }
+
+    .search-rightpart{
+        display:flex;
+    }
+
+    .search-rightpart i{
+        font-size: 1.7rem;
+        padding-top:1rem;
+        padding-left:0.2rem;
+    }
+    .search-rightpart p{
+        display:none;
+    }
+
+    .operations {
+        display: flex;
+        padding: 8px;
+    }
+
+    .add-btn{
+        margin-top: 1rem;
+    }
+
+    .filter-dropdowns{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filter-dropdowns .left-filter, .right-filter{
+        width: 100%;
+    }
+
+    .details-wrapper{
+        max-height:200px;
+        overflow-y: scroll;
+        margin-top: 1rem;
+    }
+}

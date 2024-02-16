@@ -1,0 +1,463 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    border-radius: 0%;
+    font-size: 0.9rem;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    font-family: "poppins";
+}
+
+.right-panel {
+    width: 80rem;
+    padding:0rem 0.5rem 0rem 1rem;
+    background-color: rgb(249, 253, 255) ;
+}
+
+.left-panel {
+    width:18rem;
+    background-color: white;
+    padding-left:1rem;
+    position: relative;
+}
+
+.logo-area{
+    display: flex;
+    position: relative;
+}
+
+.logo-area .logo{
+    padding:1.5rem 2rem 1rem 0rem;
+}
+
+.handle{
+    padding:1.5rem 0rem 1rem 2rem;
+    position: absolute;
+    right: -1rem; 
+}
+
+.dashboard, .employees, .roles, .access{
+    display: flex;
+}
+
+.employees{
+    background-color: rgb(255, 209, 209);
+    border-radius:4px;
+    margin:0rem 1rem 0rem -1rem;
+    
+}
+
+.roles{
+    align-items: center;
+}
+
+.roles i{
+    color:rgb(117, 117, 117);
+    font-size: 0.9rem;
+}
+
+.roles-left{
+    display: flex;
+    flex: 1;
+}
+
+.roles-right{
+    padding-right:1.5rem;
+}
+
+.access{
+    align-items: center;
+}
+
+.access i{
+    color:rgb(117, 117, 117);
+    font-size: 0.9rem;
+}
+
+.access-left{
+    display: flex;
+    flex: 1;
+}
+
+.access-right{
+    padding-right:1.5rem;
+}
+
+.dashboard-img, .roles-img, .assign-img{
+    padding-right: 1rem;
+}
+
+.employees p{
+    padding-left: 1rem;
+    color: red;
+}
+.employee-img{
+    padding-left: 1rem;
+}
+
+.update{
+    background-color: rgb(253, 243, 243);
+    border-radius:6px;
+    margin:0rem 1rem 0rem 0rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.update-content{
+    padding:1rem 1rem;
+}
+
+.update-content .update-title{
+    color: red;
+}
+
+.dismiss-btn, .accept-btn{
+    width:5rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: none;
+    padding:0.2rem;
+}
+
+.dismiss-btn{
+    color: red;
+    background-color: rgb(250, 217, 217);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.accept-btn{
+    color:white;
+    background-color: rgb(251, 57, 57);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-panel{
+    display: flex;
+    background-color:white;
+    border-radius:10px;
+    width: 100%;
+    box-shadow:2px 1px 10px rgb(220, 220, 220);
+    margin-top:0.5rem;
+}
+
+.search-leftpart{
+    display: flex;
+    width:50%;
+}
+
+.search-rightpart{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.search-leftpart img{
+    width:2rem;
+    height: 2rem;
+    padding:1.5rem 0.5rem 1.5rem 1rem;
+}
+
+.search{
+    border: none;
+    outline: none;
+}
+
+.search-rightpart img{
+    width:3rem;
+    height: 3rem;
+    padding: 1rem 0rem;
+}
+
+.search-rightpart i{
+    font-size:2rem;
+    padding:1.5rem 1rem 1rem 1rem;
+}
+.profile-content{
+    display: block;
+    padding-top:0.5rem;
+}
+
+.operations{
+    display: flex;
+}
+
+.operations .op-content{
+    width: 65%;
+}
+
+.operations .op-btn{
+    width: 35%;
+    display: flex;
+    gap :1rem;
+    margin-top: 1.5rem;
+    justify-content: flex-end;
+}
+
+.export-btn{
+    background-color: white;
+    border:1px solid rgb(117, 117, 117);
+    width: 9.3rem;
+    height:2.5rem;
+    border-radius: 5px;
+    color:rgb(117, 117, 117);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add-btn{
+    background-color:rgb(251, 57, 57);
+    box-shadow: 2px 1px 10px rgb(220, 220, 220);
+    border: none;
+    width: 14.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.filter{
+    display: flex;
+    width: 100%;
+}
+
+.filter .filter-img{
+    width:1.2rem;
+    height: 1.2rem;
+    padding:0.8rem;
+}
+
+.filter button{
+    margin:0.3rem;
+    padding:0.7rem;
+    border: none;
+    border-radius: 3px;
+}
+
+.filter button:hover{
+    background-color: rgb(249, 23, 23);
+    cursor: pointer;
+    color: white;
+}
+
+.filter-dropdowns{
+    width: 100%;
+    display: flex;
+    background-color: rgb(250, 217, 217);
+    border-radius:4px;
+    border: 1px red solid;
+}
+
+.filter-dropdowns .left-filter{
+    width: 50%;
+    display: flex;
+}
+
+.filter-dropdowns .right-filter{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.left-filter p{
+    padding:0.5rem 0rem 0rem 1rem;
+    color: red;
+}
+
+.left-filter i{
+    padding: 1.3rem 0.5rem;
+    color: red;
+    margin-top:0.5rem;
+}
+
+.left-filter select{
+    margin:1rem 0.5rem;
+    padding:0.3rem;
+    border-radius:3px;
+    border-color:red;
+}
+
+.right-filter button{
+    margin: 1rem 0.4rem;
+    padding:0.3rem 0.7rem;
+}
+
+.right-filter .reset{
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: red;
+    cursor: pointer;
+}
+
+.right-filter .apply{
+    background-color: rgb(249, 47, 47);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wrapper-class{
+    margin-top: 0.8rem;
+    border-radius: 20px 0px;
+    box-shadow: 5px 0 10px -5px #888888, -5px 0 10px -5px #888888;
+}
+.delete{
+    width:100%;
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.delete .delete-btn{
+    width: 50%;
+    display: flex;
+}
+
+.delete button{
+    cursor: pointer;
+}
+
+.delete .table-add{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.delete .delete-btn .down-arrow-img{
+    margin: 1.2rem 0.3rem 0rem 1.5rem;
+    width: 1rem;
+    height: 1.5rem;
+}
+
+.delete .delete-btn button{
+    padding:0.2rem 0.6rem;
+    margin: 0.8rem 0.3rem;
+    background-color: rgb(249, 47, 47);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    width: 6rem;
+}
+
+.delete .table-add img{
+    margin: 1rem 1.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.table-wrapper{
+    max-height: 320px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table th{
+    text-align: start;
+    padding: 1rem 1.75rem;
+    background-color: rgb(243, 242, 241);
+}
+
+table td{
+    padding: 1rem 0.38rem 0.5rem 1.5rem;
+}
+
+table tr{
+    border-bottom:1px solid rgb(148, 148, 148);
+}
+
+table tr:hover{
+    background-color:rgb(250, 217, 217);
+    cursor: pointer;
+}
+
+table input{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+table #profile-img{
+    font-size: 2rem;
+    padding-top:0.2rem;
+}
+
+table tr .profile-details{
+    display:flex;
+}
+
+table tr .profile-details .name{
+    padding-left:0.3rem;
+    padding-top:0;
+}
+
+
+/* media query */
+/* @media(max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+    }
+
+    .left-panel{
+        width:20rem;
+        left: 50%;
+        margin-bottom:1rem;
+        border: 1px solid rgb(243, 243, 243);    
+    }
+    .update{
+        position: static;
+        width:100%;
+    }
+
+    .logo-area .logo, .handle{
+        padding:1rem 1rem 1rem 1rem;
+    }
+
+    .roles i{
+        padding: 1rem 1rem 0 9rem;
+    }
+    
+    .access i{
+        padding: 1rem 1rem 0 5.5rem;
+    }
+    
+    .table-wrapper{
+        width: 100%;
+        margin: 0;
+    }
+
+    table th{
+        text-align: start;
+        padding: 1rem 2.1rem;
+        background-color: rgb(243, 242, 241);
+    }
+    
+    table td{
+        padding: 1rem 0rem 0rem 2rem;
+    }
+}
+
+@media(max-width: 425px){
+    .left-panel{
+        width:20rem;
+        left: 90%;
+        margin-bottom:1rem;    
+    }
+}  */
